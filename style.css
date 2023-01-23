@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* making responsive for mobile phone */
+
+
+
+@media(max-width:355px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: .1rem;
+    }
+
+    .header #songName {
+        color: red;
+        font-size: 1.2rem;
+    }
+
+    .header #artist {
+        color: blue;
+        font-size: 1rem;
+    }
+
+    .musicBoxContainer {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .musicBox {
+        background-color: palegreen;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        height: 100vh;
+    }
+
+    .imageBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        /* padding: 1rem; */
+
+        width: fit-content;
+        margin-bottom: 1rem;
+
+        border-radius: 2rem 10rem 2rem 10rem;
+
+    }
+
+    .imageBox img {
+        box-shadow: rgb(78, 130, 78) .5rem 0px 1rem;
+        border: 2rem solid green;
+        width: 15rem;
+        height: 15rem;
+        border-bottom: 1px solid red;
+        border-left: 1px solid green;
+        border-right: 1px solid green;
+
+    }
+
+    .playPauseNext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        /* background-color: #fff; */
+        width: 100%;
+    }
+
+    .playPauseNext div {
+        align-items: center;
+        margin: 0 1rem;
+        border: 1px solid black;
+        width: 1rem;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10rem;
+
+    }
+
+    .playPauseNext div:hover {
+        background: green;
+        color: red;
+        opacity: .5;
+    }
+}
+
+/*  */
+@media (max-width: 600px) and (min-width: 355px) {
+    body {
+        background-color: white;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: .1rem;
+    }
+
+    .header #songName {
+        color: red;
+        font-size: 2rem;
+    }
+
+    .header #artist {
+        color: blue;
+        font-size: 1.2rem;
+    }
+
+    .musicBoxContainer {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .musicBox {
+        background-color: palegreen;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    height: 100vh;
+
+    .imageBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        padding: 1rem;
+
+        width: fit-content;
+        margin-bottom: 1rem;
+
+        border-radius: 2rem 10rem 2rem 10rem;
+
+    }
+
+    .imageBox img {
+        box-shadow: rgb(78, 130, 78) .5rem 0px 1rem;
+        border: 2rem solid rgb(1, 60, 1);
+        /* border-radius: 2rem 10rem 2rem 1rem; */
+        width: 20rem;
+        height: 25rem;
+        border-bottom: 1px solid red;
+        border-left: 1px solid green;
+        border-right: 1px solid green;
+
+    }
+
+    .playPauseNext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .playPauseNext div {
+        align-items: center;
+        margin: 0 1rem;
+        border: 1px solid black;
+        width: 2rem;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10rem;
+
+    }
+
+    .playPauseNext div:hover {
+        background: green;
+        color: red;
+        opacity: .5;
+    }
+
+}
+
+@media(min-width:600px) and (max-width:768px) {
+
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: .1rem;
+    }
+
+    .header #songName {
+        color: red;
+        font-size: 2rem;
+    }
+
+    .header #artist {
+        color: blue;
+        font-size: 1.2rem;
+    }
+
+    .musicBoxContainer {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .musicBox {
+        background-color: palegreen;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    height: 100vh;
+
+    .imageBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        padding: 1rem;
+
+        width: fit-content;
+        margin-bottom: 1rem;
+
+        border-radius: 2rem 10rem 2rem 10rem;
+
+    }
+
+    .imageBox img {
+        box-shadow: rgb(78, 130, 78) .5rem 0px 1rem;
+        border: 2rem solid green;
+        /* border-radius: 2rem 10rem 2rem 1rem; */
+        width: 30rem;
+        height: 30rem;
+        border-bottom: 1px solid red;
+        border-left: 1px solid green;
+        border-right: 1px solid green;
+
+    }
+
+    .playPauseNext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        /* background-color: #fff; */
+        width: 100%;
+    }
+
+    .playPauseNext div {
+        align-items: center;
+        margin: 0 1rem;
+        border: 1px solid black;
+        width: 2rem;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10rem;
+
+    }
+
+    .playPauseNext div:hover {
+        background: green;
+        color: red;
+        opacity: .5;
+    }
+}
+
+@media (min-width: 768px)and (max-width: 992px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: .1rem;
+    }
+
+    .header #songName {
+        color: red;
+        font-size: 3rem;
+    }
+
+    .header #artist {
+        color: blue;
+        font-size: 2rem;
+    }
+
+    .musicBoxContainer {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .musicBox {
+        background-color: palegreen;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    height: 100vh;
+
+    .imageBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        padding: 1rem;
+
+        width: fit-content;
+        margin-bottom: 1rem;
+        border-radius: 2rem 10rem 2rem 10rem;
+
+    }
+
+    .imageBox img {
+        box-shadow: rgb(78, 130, 78) .5rem 0px 1rem;
+        border: 2rem solid green;
+        width: 40rem;
+        height: 40rem;
+        border-bottom: 1px solid red;
+        border-left: 1px solid green;
+        border-right: 1px solid green;
+
+    }
+
+    .playPauseNext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        /* background-color: #fff; */
+        width: 100%;
+    }
+
+    .playPauseNext div {
+        align-items: center;
+        margin: 0 1rem;
+        border: 1px solid black;
+        width: 2rem;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10rem;
+
+    }
+
+    .playPauseNext div:hover {
+        background: green;
+        color: red;
+        opacity: .5;
+    }
+}
+
+@media (min-width: 992px) and (max-width:2000px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: .1rem;
+    }
+
+    .header #songName {
+        color: red;
+        font-size: 3rem;
+    }
+
+    .header #artist {
+        color: blue;
+        font-size: 2rem;
+    }
+
+    .musicBoxContainer {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .musicBox {
+        background-color: palegreen;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    height: 100vh;
+
+    .imageBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        padding: 1rem;
+
+        width: fit-content;
+        margin-bottom: 1rem;
+        border-radius: 2rem 10rem 2rem 10rem;
+
+    }
+
+    .imageBox img {
+        box-shadow: rgb(78, 130, 78) .5rem 0px 1rem;
+        border: 2rem solid green;
+        width: 50rem;
+        height: 40rem;
+        border-bottom: 1px solid red;
+        border-left: 1px solid green;
+        border-right: 1px solid green;
+
+    }
+
+    .playPauseNext {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        /* background-color: #fff; */
+        width: 100%;
+    }
+
+    .playPauseNext div {
+        align-items: center;
+        margin: 0 1rem;
+        border: 1px solid black;
+        width: 2rem;
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10rem;
+
+    }
+
+    .playPauseNext div:hover {
+        background: green;
+        color: red;
+        opacity: .5;
+    }
+}
